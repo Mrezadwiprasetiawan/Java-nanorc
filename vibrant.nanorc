@@ -10,7 +10,7 @@ color lightgreen "(package|private|protected|public|static|strictfp|super|synchr
 color lightgreen "(boolean|byte|char|double|float|int|long|new|short|this|transient|void)?\s+.+"
 
 #kondisi khusus dimana variabel didefinisikan inline
-color lightgreen "(\{\}\<\>\+\;\/\%\*\^\!\?\:\!\&\^\|\=\,\-)\s*?\w+"
+color lightgreen "(\{\}\<\>\+\;\/\%\*\^\!\?\:\!\&\^\|\=\(\)\,\-)\s*?\w+"
 
 #primitif
 color orange "\<(boolean|byte|char|double|float|int|long|new|short|this|transient|void)\>"
