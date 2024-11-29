@@ -34,7 +34,7 @@ color yellow ""[^"]*""
 #char
 color yellow "'[^']*'"
 #angka/number
-color limegreen "(\-)?[0-9]+"
+color green "(\-)?[0-9]+"
 
 #anotasi
 color yellow "@\w+"
