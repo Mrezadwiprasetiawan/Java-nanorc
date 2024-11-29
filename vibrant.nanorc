@@ -25,7 +25,7 @@ color orange "\<(abstract|class|extends|final|implements|import|instanceof|inter
 color yellow "\<(package|private|default|protected|public|static|strictfp|super|synchronized|throws|volatile)\>"
 
 color orange "\<(true|false|null)\>"
-color orange "[\{\}\<\>\+\;\/\%\*\^\!\?\:\!\&\^\|\=\,\-]+"
+color orange "[\{\}\<\>\+\;\/\%\*\^\!\?\:\!\&\^\|\=\(\)\,\-]+"
 color magenta "\w*"
 
 #String
