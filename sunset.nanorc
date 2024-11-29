@@ -15,7 +15,7 @@ color green "(\{\}\<\>\+\;\/\%\*\^\!\?\:\!\&\^\|\=\(\)\,\-)\s*?\w+"
 #primitif
 color red "\<(boolean|byte|char|double|float|int|long|new|short|this|transient|void)\>"
 #non primitif
-color blue "\<(Boolean|Byte|Short|Float|Integer|Double|Long|Object|String|Iterable|Comparable)\>"
+color blue "\<(Object|Class|String|StringBuilder|StringBuffer|Math|System|Thread|Runnable|Exception|RuntimeException|Error|Throwable|Integer|Double|Character|Boolean|Long|Short|Byte|Float|System.arraycopy|ThreadLocal|StackTraceElement|StringTokenizer|Process|ProcessBuilder|StringJoiner|StringIndexOutOfBoundsException|NullPointerException|ClassCastException|ArithmeticException|ArrayIndexOutOfBoundsException|IllegalArgumentException|IllegalStateException|UnsupportedOperationException|NumberFormatException|SecurityException|CloneNotSupportedException|UnsupportedEncodingException|NegativeArraySizeException|IndexOutOfBoundsException|Enum|ThreadDeath|InterruptedException|FileNotFoundException|EOFException|IOException|InterruptedIOException|UncheckedIOException|NotSerializableException|Externalizable|Serializable)\>"
 #generic
 color blue "[\<]+\w+[\>]+"
 
