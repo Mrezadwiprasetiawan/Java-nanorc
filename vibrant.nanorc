@@ -1,0 +1,50 @@
+syntax java "\.java$"
+magic "Java "
+comment "//"
+
+#default color
+color brightcyan "."
+
+#nama variabel
+color lightgreen "(package|private|protected|public|static|strictfp|super|synchronized|throws|volatile|\.)?\s+."
+color lightgreen "(boolean|byte|char|double|float|int|long|new|short|this|transient|void)?\s+.+"
+
+#kondisi khusus dimana variabel didefinisikan inline
+color lightgreen "(\{\}\<\>\+\;\/\%\*\^\!\?\:\!\&\^\|\=\,\-)\s*?\w+"
+
+#primitif
+color orange "\<(boolean|byte|char|double|float|int|long|new|short|this|transient|void)\>"
+#non primitif
+color blue "\<(Boolean|Byte|Short|Float|Integer|Double|Long|Object|String|Iterable|Comparable)\>"
+#generic
+color blue "[\<]+\w+[\>]+"
+
+color orange "\<(break|case|catch|continue|default|do|else|finally|for|if|return|switch|throw|try|while)\>"
+color orange "\<(abstract|class|extends|final|implements|import|instanceof|interface|native)\>"
+#access
+color yellow "\<(package|private|default|protected|public|static|strictfp|super|synchronized|throws|volatile)\>"
+
+color orange "\<(true|false|null)\>"
+color orange "[\{\}\<\>\+\;\/\%\*\^\!\?\:\!\&\^\|\=\,\-]+"
+color magenta "\w*"
+
+#String
+color yellow ""[^"]*""
+
+#char
+color yellow "'[^']*'"
+#angka/number
+color limegreen "(\-)?[0-9]+"
+
+#anotasi
+color yellow "@\w+"
+
+color gray "//.*"
+color gray start="/\*" end="\*/"
+
+#javadoc
+color gray start="/\*\*" end="\*/"
+color lightblue "@(author|code|value|param|return|version)+"
+
+#trailing whitespace
+color red "[[:space:]]+$"
