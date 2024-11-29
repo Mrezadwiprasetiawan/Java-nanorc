@@ -20,9 +20,10 @@ color blue "\<(Boolean|Byte|Short|Float|Integer|Double|Long|Object|String|Iterab
 color blue "[\<]+\w+[\>]+"
 
 
-color red "\<(break|case|catch|continue|default|do|else|finally|for|if|return|switch|throw|try|while)\>"
+color red "\<(break|case|catch|continue|do|else|finally|for|if|return|switch|throw|try|while)\>"
 color crimson "\<(abstract|class|extends|final|implements|import|instanceof|interface|native)\>"
-color lime "\<(package|private|protected|public|static|strictfp|super|synchronized|throws|volatile)\>"
+#access
+color lime "\<(package|private|default|protected|public|static|strictfp|super|synchronized|throws|volatile)\>"
 
 color red "\<(true|false|null)\>"
 color red "[\{\}\<\>\+\;\/\%\*\^\!\?\:\!\&\^\|\=\(\)\,\-]+"
@@ -36,7 +37,15 @@ color yellow "'[^']*'"
 #angka/number
 color brightgreen "(\-)?[0-9]+"
 
+#anotasi
+color brightred "@\w+"
+
 color gray "//.*"
 color gray start="/\*" end="\*/"
+
+#javadoc
 color gray start="/\*\*" end="\*/"
+color brightblue "@(author|code|value|param|return|version)+"
+
+#trailing whitespace
 color ,brightred "[[:space:]]+$"
